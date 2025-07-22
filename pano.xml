@@ -332,6 +332,7 @@
       <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
       <hotspot description="" id="Point01" skinid="ht_node" tilt="0.83" pan="-198.97" url="{node11}" target="" title=""/>
       <hotspot description="" id="Point02" skinid="ht_node" tilt="0.4" pan="-255.9" url="{node6}" target="" title=""/>
+      <hotspot description="" id="Point03" skinid="ht_node" tilt="-25.53" pan="-248.21" url="{node8}" target="" title=""/>
     </hotspots>
     <media>
       <sound nodechangekeep="1" id="_background" level="1.000" tilt="-1.000" mode="0" ambientlevel="0.000" tiltsize="10.000" startmutedmobile="0" loop="1" pan="-1.000" pansize="10.000" field="90.000">
