@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.9/20995
 // Filename: feather_box2.ggsk
-// Generated 2025-09-05T13:24:30
+// Generated 2025-09-05T13:38:25
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -13559,6 +13559,9 @@ alert("The current view has been copied.");
 			me._video_url_popup_phone.logicBlock_visible();
 			me._video_url_popup_phone_play.logicBlock_visible();
 		});
+		player.addListener('entervr', function(event) {
+			player.enterVR();
+		});
 		player.addListener('fullscreenenter', function(event) {
 			me._btn_fullscreen_exit.logicBlock_visible();
 			me._btn_fullscreen_enter.logicBlock_visible();
@@ -18255,10 +18258,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_21 = setInterval(() => {
+				let pdfInterval_25 = setInterval(() => {
 					if (skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._ht_pdf_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_21);
+						clearInterval(pdfInterval_25);
 					}
 				}, 50);
 			}
@@ -18281,10 +18284,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_22 = setInterval(() => {
+				let pdfInterval_26 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_22);
+						clearInterval(pdfInterval_26);
 					}
 				}, 50);
 			}
