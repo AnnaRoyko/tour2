@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.9/20995
-// Filename: feather_box.ggsk
-// Generated 2025-09-05T14:03:27
+// Filename: feather_box2.ggsk
+// Generated 2025-09-05T12:58:51
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -38,8 +38,8 @@ function pano2vrSkin(player,base) {
 	player.addVariable('opt_gyro', 2, true, { ignoreInState: 1  });
 	player.addVariable('opt_maps', 2, false, { ignoreInState: 1  });
 	player.addVariable('opt_floorplans', 2, false, { ignoreInState: 1  });
-	player.addVariable('opt_share_facebook', 2, false, { ignoreInState: 1  });
-	player.addVariable('opt_share_twitter', 2, false, { ignoreInState: 1  });
+	player.addVariable('opt_share_facebook', 2, true, { ignoreInState: 1  });
+	player.addVariable('opt_share_twitter', 2, true, { ignoreInState: 1  });
 	player.addVariable('opt_share_copy', 2, true, { ignoreInState: 1  });
 	player.addVariable('opt_share', 2, false, { ignoreInState: 1  });
 	player.addVariable('opt_url_popup', 2, true, { ignoreInState: 1  });
@@ -15271,21 +15271,22 @@ alert("The current view has been copied.");
 		}
 		el=me._ht_url=document.createElement('div');
 		el.ggId="ht_url";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1.5,sy:1.5,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_hotspot ";
 		el.ggType='hotspot';
 		hs ='';
 		hs+='z-index: -1;';
 		hs+='height : 0px;';
-		hs+='left : 142px;';
+		hs+='left : 272px;';
 		hs+='position : absolute;';
-		hs+='top : 63px;';
+		hs+='top : 98px;';
 		hs+='visibility : hidden;';
 		hs+='width : 0px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
+		el.style.transform=parameterToTransform(el.ggParameter);
 		me._ht_url.ggIsActive=function() {
 			return player.getCurrentNode()==this.ggElementNodeId();
 		}
@@ -15834,9 +15835,9 @@ alert("The current view has been copied.");
 		hs ='';
 		hs+='z-index: -1;';
 		hs+='height : 0px;';
-		hs+='left : 82px;';
+		hs+='left : 142px;';
 		hs+='position : absolute;';
-		hs+='top : 63px;';
+		hs+='top : 156px;';
 		hs+='visibility : hidden;';
 		hs+='width : 0px;';
 		hs+='pointer-events:auto;';
@@ -16113,7 +16114,7 @@ alert("The current view has been copied.");
 		el.ggId="ht_node_icon";
 		el.ggDx=0;
 		el.ggDy=0;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1.6,sy:1.6,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
@@ -16127,6 +16128,7 @@ alert("The current view has been copied.");
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
+		el.style.transform=parameterToTransform(el.ggParameter);
 		me._ht_node_icon.ggIsActive=function() {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
 				return this.parentNode.ggIsActive();
@@ -18031,7 +18033,7 @@ me._ht_info_bg.style.transform='translateZ(10px)';
 		el.ggSubElement = els;
 		el.ggId="ht_info_close";
 		el.ggDx=0;
-		el.ggDy=0;
+		el.ggDy=1;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
@@ -18042,7 +18044,7 @@ me._ht_info_bg.style.transform='translateZ(10px)';
 		hs+='left : calc(50% - ((25px + 0px) / 2) + 0px);';
 		hs+='opacity : 0;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((25px + 0px) / 2) + 0px);';
+		hs+='top : calc(50% - ((25px + 0px) / 2) + 1px);';
 		hs+='visibility : hidden;';
 		hs+='width : 25px;';
 		hs+='pointer-events:auto;';
@@ -18253,10 +18255,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_37 = setInterval(() => {
+				let pdfInterval_17 = setInterval(() => {
 					if (skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._ht_pdf_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_37);
+						clearInterval(pdfInterval_17);
 					}
 				}, 50);
 			}
@@ -18279,10 +18281,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_38 = setInterval(() => {
+				let pdfInterval_18 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_38);
+						clearInterval(pdfInterval_18);
 					}
 				}, 50);
 			}
