@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.9/20995
 // Filename: feather_box2.ggsk
-// Generated 2025-09-05T13:38:25
+// Generated 2025-09-05T12:58:51
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -38,8 +38,8 @@ function pano2vrSkin(player,base) {
 	player.addVariable('opt_gyro', 2, true, { ignoreInState: 1  });
 	player.addVariable('opt_maps', 2, false, { ignoreInState: 1  });
 	player.addVariable('opt_floorplans', 2, false, { ignoreInState: 1  });
-	player.addVariable('opt_share_facebook', 2, false, { ignoreInState: 1  });
-	player.addVariable('opt_share_twitter', 2, false, { ignoreInState: 1  });
+	player.addVariable('opt_share_facebook', 2, true, { ignoreInState: 1  });
+	player.addVariable('opt_share_twitter', 2, true, { ignoreInState: 1  });
 	player.addVariable('opt_share_copy', 2, true, { ignoreInState: 1  });
 	player.addVariable('opt_share', 2, false, { ignoreInState: 1  });
 	player.addVariable('opt_url_popup', 2, true, { ignoreInState: 1  });
@@ -485,7 +485,7 @@ function pano2vrSkin(player,base) {
 		el.ggType='container';
 		hs ='';
 		hs+='height : 100%;';
-		hs+='left : 3px;';
+		hs+='left : 0px;';
 		hs+='opacity : 0;';
 		hs+='position : absolute;';
 		hs+='top : 0px;';
@@ -1279,17 +1279,17 @@ function pano2vrSkin(player,base) {
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="btn_gyro_on_icon";
-		el.ggDx=-152;
-		el.ggDy=-89;
+		el.ggDx=0;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
 		hs+='height : 38px;';
-		hs+='left : calc(50% - ((38px + 0px) / 2) - 152px);';
+		hs+='left : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((38px + 0px) / 2) - 89px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : inherit;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -1349,17 +1349,17 @@ function pano2vrSkin(player,base) {
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="btn_gyro_off_icon";
-		el.ggDx=-76;
-		el.ggDy=-31;
+		el.ggDx=0;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
 		hs+='height : 38px;';
-		hs+='left : calc(50% - ((38px + 0px) / 2) - 76px);';
+		hs+='left : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((38px + 0px) / 2) - 31px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -1416,13 +1416,13 @@ function pano2vrSkin(player,base) {
 		hs+='background : rgba(80,80,80,0.392157);';
 		hs+='border : 1px solid #ffffff;';
 		hs+='border-radius : 18px;';
-		hs+='bottom : 547px;';
+		hs+='bottom : 20px;';
 		hs+='cursor : pointer;';
-		hs+='height : 42px;';
+		hs+='height : 50px;';
 		hs+='position : absolute;';
-		hs+='right : 755px;';
+		hs+='right : 25px;';
 		hs+='visibility : hidden;';
-		hs+='width : 43px;';
+		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
@@ -1488,8 +1488,8 @@ function pano2vrSkin(player,base) {
 					deltaX += 0;
 					deltaY += 70;
 				}
-					me._btn_vr.style.right=(755+deltaX) + 'px';
-					me._btn_vr.style.bottom=(547+deltaY) + 'px';
+					me._btn_vr.style.right=(25+deltaX) + 'px';
+					me._btn_vr.style.bottom=(20+deltaY) + 'px';
 			}
 		}
 		me._btn_vr.logicBlock_position();
@@ -1570,18 +1570,18 @@ function pano2vrSkin(player,base) {
 		el.ggSubElement = els;
 		el.ggId="btn_vr_icon";
 		el.ggDx=0;
-		el.ggDy=-1;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
-		hs+='height : 36px;';
-		hs+='left : calc(50% - ((36px + 0px) / 2) + 0px);';
+		hs+='height : 38px;';
+		hs+='left : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((36px + 0px) / 2) - 1px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : inherit;';
-		hs+='width : 36px;';
+		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
@@ -1611,11 +1611,11 @@ function pano2vrSkin(player,base) {
 		hs+='background : rgba(80,80,80,0.392157);';
 		hs+='border : 1px solid #ffffff;';
 		hs+='border-radius : 18px;';
-		hs+='bottom : 500px;';
+		hs+='bottom : 20px;';
 		hs+='cursor : pointer;';
 		hs+='height : 50px;';
 		hs+='position : absolute;';
-		hs+='right : 23px;';
+		hs+='right : 25px;';
 		hs+='visibility : hidden;';
 		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
@@ -1693,8 +1693,8 @@ function pano2vrSkin(player,base) {
 					deltaX += 0;
 					deltaY += 70;
 				}
-					me._btn_audio.style.right=(23+deltaX) + 'px';
-					me._btn_audio.style.bottom=(500+deltaY) + 'px';
+					me._btn_audio.style.right=(25+deltaX) + 'px';
+					me._btn_audio.style.bottom=(20+deltaY) + 'px';
 			}
 		}
 		me._btn_audio.logicBlock_position();
@@ -1775,17 +1775,17 @@ function pano2vrSkin(player,base) {
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="btn_audio_on";
-		el.ggDx=-1;
-		el.ggDy=-466;
+		el.ggDx=0;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
 		hs+='height : 38px;';
-		hs+='left : calc(50% - ((38px + 0px) / 2) - 1px);';
+		hs+='left : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((38px + 0px) / 2) - 466px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -1845,17 +1845,17 @@ function pano2vrSkin(player,base) {
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="btn_audio_off";
-		el.ggDx=1;
-		el.ggDy=-340;
+		el.ggDx=0;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
 		hs+='height : 38px;';
-		hs+='left : calc(50% - ((38px + 0px) / 2) + 1px);';
+		hs+='left : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((38px + 0px) / 2) - 340px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : inherit;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -2113,7 +2113,7 @@ function pano2vrSkin(player,base) {
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="btn_copy";
-		el.ggDy=-283;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
@@ -2121,9 +2121,9 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 38px;';
-		hs+='left : 1px;';
+		hs+='left : 0px;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((38px + 0px) / 2) - 283px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -2191,8 +2191,8 @@ function pano2vrSkin(player,base) {
 					deltaX += 12;
 					deltaY += 0;
 				}
-					me._btn_copy.style.left=(1+deltaX) + 'px';
-					me._btn_copy.style.top = 'calc(50% - (38px / 2) - (0px / 2) + ' + (-283+deltaY) + 'px)';
+					me._btn_copy.style.left=(0+deltaX) + 'px';
+					me._btn_copy.style.top = 'calc(50% - (38px / 2) - (0px / 2) + ' + (0+deltaY) + 'px)';
 			}
 		}
 		me._btn_copy.logicBlock_position();
@@ -2253,7 +2253,7 @@ alert("The current view has been copied.");
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="btn_twitter";
-		el.ggDy=-98;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
@@ -2261,9 +2261,9 @@ alert("The current view has been copied.");
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 38px;';
-		hs+='left : 2px;';
+		hs+='left : 0px;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((38px + 0px) / 2) - 98px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -2309,8 +2309,8 @@ alert("The current view has been copied.");
 					deltaX += 12;
 					deltaY += 0;
 				}
-					me._btn_twitter.style.left=(2+deltaX) + 'px';
-					me._btn_twitter.style.top = 'calc(50% - (38px / 2) - (0px / 2) + ' + (-98+deltaY) + 'px)';
+					me._btn_twitter.style.left=(0+deltaX) + 'px';
+					me._btn_twitter.style.top = 'calc(50% - (38px / 2) - (0px / 2) + ' + (0+deltaY) + 'px)';
 			}
 		}
 		me._btn_twitter.logicBlock_position();
@@ -2358,7 +2358,7 @@ alert("The current view has been copied.");
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="btn_facebook";
-		el.ggDy=-157;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
@@ -2368,7 +2368,7 @@ alert("The current view has been copied.");
 		hs+='height : 38px;';
 		hs+='left : 0px;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((38px + 0px) / 2) - 157px);';
+		hs+='top : calc(50% - ((38px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -2429,8 +2429,8 @@ alert("The current view has been copied.");
 		hs+='cursor : pointer;';
 		hs+='height : 50px;';
 		hs+='position : absolute;';
-		hs+='right : 1px;';
-		hs+='top : -218px;';
+		hs+='right : 0px;';
+		hs+='top : 0px;';
 		hs+='visibility : inherit;';
 		hs+='width : 50px;';
 		hs+='pointer-events:auto;';
@@ -2499,8 +2499,8 @@ navigator.share({ url: shareUrl });
 		hs ='';
 		hs+='height : 38px;';
 		hs+='position : absolute;';
-		hs+='right : 8px;';
-		hs+='top : -187px;';
+		hs+='right : 6px;';
+		hs+='top : 6px;';
 		hs+='visibility : inherit;';
 		hs+='width : 38px;';
 		hs+='pointer-events:auto;';
@@ -13559,9 +13559,6 @@ alert("The current view has been copied.");
 			me._video_url_popup_phone.logicBlock_visible();
 			me._video_url_popup_phone_play.logicBlock_visible();
 		});
-		player.addListener('entervr', function(event) {
-			player.enterVR();
-		});
 		player.addListener('fullscreenenter', function(event) {
 			me._btn_fullscreen_exit.logicBlock_visible();
 			me._btn_fullscreen_enter.logicBlock_visible();
@@ -15906,8 +15903,8 @@ alert("The current view has been copied.");
 		}
 		el=me._ht_node_bg=document.createElement('div');
 		el.ggId="ht_node_bg";
-		el.ggDx=1;
-		el.ggDy=2;
+		el.ggDx=0;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_rectangle ";
@@ -15918,9 +15915,9 @@ alert("The current view has been copied.");
 		hs+='border-radius : 14px;';
 		hs+='cursor : pointer;';
 		hs+='height : 40px;';
-		hs+='left : calc(50% - ((40px + 0px) / 2) + 1px);';
+		hs+='left : calc(50% - ((40px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((40px + 0px) / 2) + 2px);';
+		hs+='top : calc(50% - ((40px + 0px) / 2) + 0px);';
 		hs+='visibility : inherit;';
 		hs+='width : 40px;';
 		hs+='pointer-events:auto;';
@@ -16047,7 +16044,7 @@ alert("The current view has been copied.");
 		el.ggSubElement = els;
 		el.ggId="ht_node_icon_visited";
 		el.ggDx=0;
-		el.ggDy=-53;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
@@ -16056,7 +16053,7 @@ alert("The current view has been copied.");
 		hs+='height : 25px;';
 		hs+='left : calc(50% - ((25px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((25px + 0px) / 2) - 53px);';
+		hs+='top : calc(50% - ((25px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
 		hs+='width : 25px;';
 		hs+='pointer-events:auto;';
@@ -16115,17 +16112,17 @@ alert("The current view has been copied.");
 		el.appendChild(els);
 		el.ggSubElement = els;
 		el.ggId="ht_node_icon";
-		el.ggDx=2;
-		el.ggDy=60;
+		el.ggDx=0;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1.6,sy:1.6,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
 		el.ggType='svg';
 		hs ='';
 		hs+='height : 25px;';
-		hs+='left : calc(50% - ((25px + 0px) / 2) + 2px);';
+		hs+='left : calc(50% - ((25px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((25px + 0px) / 2) + 60px);';
+		hs+='top : calc(50% - ((25px + 0px) / 2) + 0px);';
 		hs+='visibility : inherit;';
 		hs+='width : 25px;';
 		hs+='pointer-events:auto;';
@@ -18258,10 +18255,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_25 = setInterval(() => {
+				let pdfInterval_17 = setInterval(() => {
 					if (skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._ht_pdf_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._ht_pdf_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_25);
+						clearInterval(pdfInterval_17);
 					}
 				}, 50);
 			}
@@ -18284,10 +18281,10 @@ me._ht_info_bg.style.transform='';
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_26 = setInterval(() => {
+				let pdfInterval_18 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_26);
+						clearInterval(pdfInterval_18);
 					}
 				}, 50);
 			}
