@@ -105,9 +105,9 @@
       <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="1">
-      <start pan="-19.16" fov="50" tilt="0" projection="4"/>
+      <start pan="-19.16" fov="45" tilt="0" projection="4"/>
       <flyin pan="44.4" fov="50" tilt="0" projection="4"/>
-      <min pan="0" tilt="-90" fovpixel="2"/>
+      <min pan="0" fov="5" tilt="-90"/>
       <max pan="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
     </view>
     <userdata author="" description="" copyright="" latitude="" heading="0" datetime="" nodeid="node1" tags="" customnodeid="" info="" title="" comment="" longitude="" source=""/>
@@ -136,7 +136,7 @@
       <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="1">
-      <start pan="37.37" fov="50" tilt="0" projection="4"/>
+      <start pan="37.37" fov="40" tilt="0" projection="4"/>
       <flyin pan="44.4" fov="50" tilt="0" projection="4"/>
       <min pan="0" tilt="-90" fovpixel="2"/>
       <max pan="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
