@@ -9,9 +9,9 @@
     </input>
     <view pannorth="0" fovmode="1">
       <start pan="44.4" fov="50" tilt="0" projection="4"/>
-      <flyin pan="44.4" fov="50" tilt="0" projection="4"/>
-      <min pan="-339.76" fov="5" tilt="-16.12"/>
-      <max pan="70.24" fov="140" tilt="16.74" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
+      <flyin pan="42.87" fov="57.93" tilt="0" projection="4"/>
+      <min pan="0" fov="5" tilt="-90"/>
+      <max pan="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
     </view>
     <userdata author="" description="" copyright="" latitude="" heading="0" datetime="" nodeid="node4" tags="" customnodeid="" info="" title="" comment="" longitude="" source=""/>
     <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
@@ -41,9 +41,9 @@
     </input>
     <view pannorth="0" fovmode="1">
       <start pan="-178.75" fov="50" tilt="0" projection="4"/>
-      <flyin pan="-178.39" fov="50" tilt="0" projection="4"/>
-      <min pan="158.37" fov="5" tilt="-7.42"/>
-      <max pan="206.33" fov="140" tilt="24" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
+      <flyin pan="-178.79" fov="57.77" tilt="0" projection="4"/>
+      <min pan="0" fov="5" tilt="-90"/>
+      <max pan="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
     </view>
     <userdata author="" description="" copyright="" latitude="" heading="0" datetime="" nodeid="node6" tags="Pano2VR7" customnodeid="" info="" title="" comment="" longitude="" source=""/>
     <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
@@ -77,8 +77,8 @@
     <view pannorth="0" fovmode="1">
       <start pan="88.65" fov="50" tilt="0" projection="4"/>
       <flyin pan="88.65" fov="50" tilt="0" projection="4"/>
-      <min pan="63.65" tilt="-16.43" fovpixel="2"/>
-      <max pan="113.65" fov="140" tilt="16.43" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" fov="140" tilt="90" fovstereographic="330" scaletofit="1" fovfisheye="360"/>
     </view>
     <userdata author="" description="" copyright="" latitude="" heading="0" datetime="" nodeid="node5" tags="Pano2VR7" customnodeid="" info="" title="" comment="" longitude="" source=""/>
     <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
